@@ -4,7 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 // Import the logos from assets
 import ccb_logo from '../../assets/ccb.logo.svg';
-import hiv_atlas_logo from '../../assets/hiv_atlas.logo.crop.svg';
+import sparrow_logo from '../../assets/sparrow.logo.svg';
 
 import './Header.css';
 
@@ -18,7 +18,7 @@ const Header: React.FC = () => {
                         <Col md={4}>
                             <Nav.Link href="/" className="d-flex align-items-center">
                                 <div>
-                                    <img src={hiv_atlas_logo} alt="HIV Atlas Logo" style={{ height: '80px', marginRight: '15px' }} />
+                                    <img src={sparrow_logo} alt="Ales Varabyou Logo" style={{ height: '80px', marginRight: '15px' }} />
                                 </div>
                                 <h1 className="text-dark text-center" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: '500' }}>Ales Varabyou</h1>
                             </Nav.Link>
@@ -28,6 +28,9 @@ const Header: React.FC = () => {
                             <Nav className="justify-content-end">
                                 <Nav.Item>
                                     <Nav.Link href="/projects" className="nav-link">Projects</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link href="/hobbies" className="nav-link">Hobbies</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link href="/about_me" className="nav-link">About</Nav.Link>
