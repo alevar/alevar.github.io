@@ -1,23 +1,16 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Home from './components/Home/Home';
-import Projects from './components/Projects/Projects';
-import SplicingVariation from './projects/SplicingVariation/SplicingVariation';
+// src/App.tsx
+import React, { useEffect } from 'react';
 
 const App: React.FC = () => {
+  useEffect(() => {
+    window.location.href = 'https://alevar.github.io/homepage';
+  }, []);
+
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/splicingVariation" element={<SplicingVariation />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <div>
+      <p>Redirecting...</p>
+    </div>
   );
-};
+}
 
 export default App;
