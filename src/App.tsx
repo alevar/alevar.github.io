@@ -3,14 +3,10 @@ import React, { useEffect } from 'react';
 
 const App: React.FC = () => {
   useEffect(() => {
-    window.location.href = 'https://alevar.github.io/homepage';
+    // Immediate redirect to homepage
+    window.location.replace('https://alevar.github.io/homepage');
   }, []);
-
-  return (
-    <div>
-      <p>Redirecting...</p>
-    </div>
-  );
-}
+  return null;
+};
 
 export default App;
